@@ -1,0 +1,34 @@
+[
+  {
+    "label": "KeyGuide Debug (macOS / Linux)",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/build/debug/KeyGuide/KeyGuide",
+    "cwd": "$ZED_WORKTREE_ROOT/build/debug/KeyGuide",
+    "build": {
+      "command": "cmake",
+      "args": [
+        "--build",
+        "--preset",
+        "debug"
+      ],
+      "cwd": "$ZED_WORKTREE_ROOT"
+    }
+  },
+  {
+    "label": "KeyGuide Debug (Windows x64)",
+    "adapter": "CodeLLDB",
+    "request": "launch",
+    "program": "$ZED_WORKTREE_ROOT/build/debug/KeyGuide/KeyGuide.exe",
+    "cwd": "$ZED_WORKTREE_ROOT/build/debug/KeyGuide",
+    "build": {
+      "command": "cmake",
+      "args": [
+        "--build",
+        "--preset",
+        "debug"
+      ],
+      "cwd": "$ZED_WORKTREE_ROOT"
+    }
+  }
+]

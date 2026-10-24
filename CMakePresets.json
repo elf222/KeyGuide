@@ -1,0 +1,31 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "desktop",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "cacheVariables": { "PLATFORM": "Desktop" }
+    },
+    {
+      "name": "debug",
+      "displayName": "Desktop Debug",
+      "inherits": "desktop",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    },
+    {
+      "name": "release",
+      "displayName": "Desktop Release",
+      "inherits": "desktop",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "debug", "configurePreset": "debug", "targets": ["KeyGuide"] },
+    { "name": "release", "configurePreset": "release", "targets": ["KeyGuide"] },
+    { "name": "run-debug", "configurePreset": "debug", "targets": ["run"] },
+    { "name": "run-release", "configurePreset": "release", "targets": ["run"] }
+  ]
+}

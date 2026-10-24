@@ -1,0 +1,6 @@
+{
+    "configurations":[
+        {"name":"Desktop","configurationProvider":"ms-vscode.cmake-tools","compileCommands":"${workspaceFolder}/build/debug/compile_commands.json","includePath":["${workspaceFolder}/src","${workspaceFolder}/build/debug/_deps/raylib-src/src"],"cStandard":"c11","cppStandard":"c++20"}
+    ],
+    "version":4
+}

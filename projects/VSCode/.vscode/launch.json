@@ -1,0 +1,7 @@
+{
+    "version":"0.2.0",
+    "configurations":[
+        {"name":"KeyGuide Debug","type":"cppdbg","request":"launch","program":"${workspaceFolder}/build/debug/KeyGuide/KeyGuide","cwd":"${workspaceFolder}/build/debug/KeyGuide","args":[],"MIMode":"gdb","osx":{"MIMode":"lldb"},"windows":{"program":"${workspaceFolder}/build/debug/KeyGuide/KeyGuide.exe"},"preLaunchTask":"build debug"},
+        {"name":"KeyGuide Preview","type":"cppdbg","request":"launch","program":"${workspaceFolder}/build/debug/KeyGuide/KeyGuide","cwd":"${workspaceFolder}/build/debug/KeyGuide","args":["--preview"],"MIMode":"gdb","osx":{"MIMode":"lldb"},"windows":{"program":"${workspaceFolder}/build/debug/KeyGuide/KeyGuide.exe"},"preLaunchTask":"build debug"}
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {"label":"configure debug","type":"process","command":"cmake","args":["--preset","debug"],"options":{"cwd":"${workspaceFolder}"}},
+        {"label":"configure release","type":"process","command":"cmake","args":["--preset","release"],"options":{"cwd":"${workspaceFolder}"}},
+        {"label":"build debug","type":"process","command":"cmake","args":["--build","--preset","debug"],"dependsOn":"configure debug","group":{"kind":"build","isDefault":true},"options":{"cwd":"${workspaceFolder}"}},
+        {"label":"build release","type":"process","command":"cmake","args":["--build","--preset","release"],"dependsOn":"configure release","options":{"cwd":"${workspaceFolder}"}}
+    ]
+}

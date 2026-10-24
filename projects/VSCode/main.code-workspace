@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"cmake.useCMakePresets": "always",
+		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+		"files.associations": {
+			"raylib.h": "c",
+			"math.h": "c",
+			"stdio.h": "c",
+			"*.m": "c"
+		}
+	},
+	"extensions": {
+		"recommendations": ["ms-vscode.cmake-tools", "ms-vscode.cpptools"]
+	}
+}

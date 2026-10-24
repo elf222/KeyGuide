@@ -1,0 +1,116 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Visual Studio files
+[Dd]ebug/
+[Dd]ebug.DLL/
+[R]elease/
+[Rr]elease.DLL/
+*.user
+*.aps
+.vs
+
+# Clangd LSP
+.cache
+compile_commands.json
+
+# Build folder
+[Bb]uild
+
+# Android files
+*apk*
+android.*
+
+# WebAssembly release files
+*.data
+*.wasm
+*.js
+!src/minshell.html
+!src/shell.html
+
+# Build folders
+build/
+build-mac/
+build-mac-debug/
+build-mac-release/
+build-windows/
+build-web/
+itch-web/
+
+# Shared editor configuration; other Zed files remain personal.
+.zed/*
+!.zed/tasks.json
+!.zed/debug.json
+!.zed/settings.json
+CMakeUserPresets.json
+
+# macOS
+.DS_Store
+
+# CMake warning config
+warnings.cmakelang
+
+# Python development checks / Blender add-on caches
+__pycache__/
+*.pyc
+
+# KeyGuide: local data, logs and build caches that must never be published
+*.log
+.env*
+secrets.json
+explanations.json
+/settings.json
+.aerospace.toml
+CMakeCache.txt
+CMakeFiles/
+cmake-build*/

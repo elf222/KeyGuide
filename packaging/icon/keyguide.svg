@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- KeyGuide app icon: a keycap with an AI tip bubble, in the overlay's palette
+       (background 19,22,29; key 30,35,45; border 53,61,74; accent 120,210,190; tip 160,196,255).
+       Regenerate the .icns/.ico files with packaging/icon/make_icons.sh. -->
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3140"/>
+      <stop offset="1" stop-color="#13161d"/>
+    </linearGradient>
+    <linearGradient id="keySide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262c38"/>
+      <stop offset="1" stop-color="#171b23"/>
+    </linearGradient>
+    <linearGradient id="keyTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c4555"/>
+      <stop offset="1" stop-color="#2b323f"/>
+    </linearGradient>
+    <linearGradient id="tip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9d3ff"/>
+      <stop offset="1" stop-color="#86acf2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- macOS icon grid: 824 x 824 body centred on a 1024 canvas. -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#background)"/>
+  <rect x="104" y="104" width="816" height="816" rx="181" fill="none" stroke="#ffffff"
+        stroke-opacity="0.07" stroke-width="8"/>
+
+  <!-- Keycap: shadow, side walls, then the top face. -->
+  <rect x="196" y="418" width="456" height="440" rx="92" fill="#0b0d12" fill-opacity="0.55"/>
+  <rect x="196" y="396" width="456" height="440" rx="92" fill="url(#keySide)" stroke="#353d4a"
+        stroke-width="8"/>
+  <rect x="236" y="416" width="376" height="340" rx="66" fill="url(#keyTop)"/>
+  <rect x="236" y="416" width="376" height="340" rx="66" fill="none" stroke="#ffffff"
+        stroke-opacity="0.08" stroke-width="6"/>
+
+  <!-- "K" legend in the accent colour. -->
+  <path d="M362 496 V676 M362 606 L486 496 M404 568 L492 676" fill="none" stroke="#78d2be"
+        stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Tip bubble pointing at the key, with a sparkle and two lines of tip text. -->
+  <path d="M540 170 H808 A56 56 0 0 1 864 226 V364 A56 56 0 0 1 808 420 H648 L566 486 L584 420
+           H540 A56 56 0 0 1 484 364 V226 A56 56 0 0 1 540 170 Z" fill="#0b0d12"
+        fill-opacity="0.45" transform="translate(0 14)"/>
+  <path d="M540 170 H808 A56 56 0 0 1 864 226 V364 A56 56 0 0 1 808 420 H648 L566 486 L584 420
+           H540 A56 56 0 0 1 484 364 V226 A56 56 0 0 1 540 170 Z" fill="url(#tip)"/>
+  <path d="M584 226 Q592 286 652 295 Q592 304 584 364 Q576 304 516 295 Q576 286 584 226 Z"
+        fill="#13161d"/>
+  <path d="M686 266 H812 M686 326 H778" fill="none" stroke="#13161d" stroke-width="30"
+        stroke-linecap="round"/>
+</svg>

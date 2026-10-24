@@ -1,0 +1,27 @@
+GLFW_ICON ICON "KeyGuide.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    //BLOCK "080904E4"     // English UK
+    BLOCK "040904E4"    // English US
+    BEGIN
+      VALUE "CompanyName", "elf222"
+      VALUE "FileDescription", "KeyGuide - Built with raylib"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "KeyGuide"
+      VALUE "LegalCopyright", "Copyright (c) 2026 elf222. GNU GPL v3.0."
+      VALUE "OriginalFilename", "KeyGuide.exe"
+      VALUE "ProductName", "KeyGuide"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    //VALUE "Translation", 0x809, 1252    // English UK
+    VALUE "Translation", 0x409, 1252    // English US
+  END
+END
